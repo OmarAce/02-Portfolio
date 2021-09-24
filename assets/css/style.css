@@ -1,0 +1,90 @@
+/* Universal Selector */
+* {
+    margin:0;
+    padding:0;
+    color: white;  
+}
+  
+/* Element Selectors */
+body {
+    position: relative;
+    font-size: 20px;
+    background-color: #333;
+}
+  
+h1,
+h2 {
+    margin: 20px;
+}
+  
+main {
+    padding: 60px 0;
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+header,
+footer {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: rgb(17, 17, 43);
+}
+
+header {
+    position: fixed;
+    border-bottom: 1px solid #212121;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+aside {
+    flex: 1;
+    background-color: #121212;
+    padding: 20px;
+}
+  
+aside h2 {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    flex: 3;
+    background-color: #121212;
+    padding: 20px;
+}
+
+.round {
+    width: 351px;
+    padding: 10px;
+    border: 5px solid rgb(90, 100, 241);
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+} 
+
+/* Class Selectors */
+.text-center {
+    text-align: center;
+}
+  
+.text-right {
+    text-align: right;
+}
+
+p {
+    margin: 24px;
+}
+@media screen and (max-width: 768px) {
+  aside{
+    order: 1;
+  }    
+}
