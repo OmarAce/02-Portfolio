@@ -7,7 +7,8 @@
 }
 
 /* Element Selectors */
-.home {
+
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.home {
+main {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -62,6 +63,7 @@ a:hover {
 aside {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #121212;
     margin-top: 7%;
@@ -133,104 +135,14 @@ p {
     margin: 24px;
 }
 
-/* Contact Form Specific */
-
-.info-box {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    height: 35vh;
-    width: 100%;
-}
-
-.info-box h1 {
-    font-size: 3em;
-}
-
-.info-box a {
-    color: turquoise;
-}
-
-.mark-up {
-    height: 15vh;
-    width: 100%;
-    position: absolute;
-    font-size: 3em;
-}
-
-.socials {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #121212;
-}
-
-.socials ul {
-    position: relative;
-    display: flex;
-}
-
-.socials ul li {
-    position: relative;
-    list-style-type: none;
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-.socials ul li a {
-    text-decoration: none;
-}
-
-.socials ul li a .fa {
-    font-size: 6em;
-    color:#212121;
-}
-
-.socials ul li::before {
-    font-family: fontAwesome;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    font-size: 6em;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-
-.socials ul li:nth-child(1)::before {
-    content: "\f099";
-    color: #1da1f2;
-    border-bottom: 4px solid #1da1f2;
-}
-
-.socials ul li:nth-child(2)::before {
-    content: "\f09b";
-    color: #fafafa;
-    border-bottom: 4px solid #fafafa;
-}
-
-.socials ul li:nth-child(3)::before {
-    content: "\f0e1";
-    color: #0077b5;
-    border-bottom: 4px solid #0077b5;
-}
-.socials ul li:hover::before {
-    height: 100%;
-}
 
 @media screen and (max-width: 768px) {
   aside{
     order: 1;
   }    
 
-  section {
-      order: 2;
+  .home-content {
+    order: 2;
+
   }
 }
