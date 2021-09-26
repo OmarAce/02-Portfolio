@@ -26,21 +26,51 @@
   <main>
     
     <section>
-      <h1> My Work!</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus ducimus asperiores sint 
-        nihil eaque quae pariatur quia dignissimos commodi, accusantium dolores fugit laboriosam quidem dolor 
-        officia nisi eligendi deserunt!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum obcaecati dolorum distinctio nesciunt, 
-        debitis enim dolores explicabo ipsa blanditiis! Consectetur, assumenda doloribus. Architecto officia itaque 
-        facere eius iure facilis?</p>
+      <h1 class="text-center"> My Work!</h1>
+      
+        <div class="text-center info-box">
+        
+          <p> The easiest way to get in contact with me is my email, <a id="a1" href="mailto:omarace95@gmail.com">omarace95@gmail.com</a></p>
+        
+            <div class="tooltip">
+               <button onclick="copyToClipboard('a1')" onmouseout="outFunc()">
+                   <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    📋
+                </button>
+            </div> 
+        </div>   
     </section>
     
+    <section class="socials">
+
+    </section>
+
   <footer>
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="" aria-label="Boring"> CC BY-NC-SA 4.0 2021 © Omar Acevedo. </a>
   </footer>
 
   </main>
 
+  <script type="text/javascript">
+    
+    function copyToClipboard(elementId) {
+      var aux = document.createElement("input");
+      aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+      document.body.appendChild(aux);
+      aux.select();
+      document.execCommand("copy");
+      document.body.removeChild(aux);
+  
+    var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied: " + copyText.value;
+  }
+
+    function outFunc() {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copy to clipboard";
+  }
+
+  </script>
 
 </body>
 

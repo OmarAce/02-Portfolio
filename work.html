@@ -26,7 +26,13 @@
   <main>
     
     <section>
-      <h1 class="text-center"> My Work!</h1>
+      <h1 class="text-center"> My Work!</h1>   <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          📋
+          </button>
+        </div>
+        
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus ducimus asperiores sint 
         nihil eaque quae pariatur quia dignissimos commodi, accusantium dolores fugit laboriosam quidem dolor 
         officia nisi eligendi deserunt!</p>
@@ -41,6 +47,22 @@
 
   </main>
 
+    <script>
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied: " + copyText.value;
+    }
+    
+    function outFunc() {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copy to clipboard";
+    }
+    </script>
 
 </body>
 
