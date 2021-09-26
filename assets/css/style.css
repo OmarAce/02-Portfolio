@@ -46,20 +46,29 @@ main {
 }
   
 aside {
+    display: flex;
     flex: 1;
+    flex-direction: column;
     background-color: #121212;
     padding: 20px;
+    align-items: center;
+}
+
+aside img {
+    order: 2;
 }
   
 aside h2 {
     position: relative;
     z-index: 1;
+    order: 1;
 }
 
 section {
     flex: 3;
     background-color: #121212;
     padding: 20px;
+    order: 2;
 }
 
 .round {
