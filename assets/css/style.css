@@ -1,10 +1,10 @@
 /* Universal Selector */
 * {
-    margin:0;
-    padding:0;
-    color: white;  
+    margin: 0;
+    padding: 0;
+    color: white;
 }
-  
+
 /* Element Selectors */
 body {
     position: relative;
@@ -17,10 +17,6 @@ h2 {
     margin: 20px;
 }
   
-main {
-    padding: 60px 0;
-}
-
 li {
     display: inline;
     padding: 0px 20px;
@@ -38,11 +34,25 @@ footer {
 header {
     position: fixed;
     border-bottom: 1px solid #212121;
+    z-index: 30;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: flex;
+    margin: 0;
+    height: 100vh;
+    background-color: #121212;
+    padding: 60px 0;
+    margin-bottom: 5px;
 }
   
 aside {
@@ -55,13 +65,13 @@ aside {
 }
 
 aside img {
-    order: 2;
+    order: 1;
 }
   
 aside h2 {
     position: relative;
     z-index: 1;
-    order: 1;
+    order: 2;
 }
 
 section {
@@ -71,6 +81,15 @@ section {
     order: 2;
 }
 
+footer {
+    display: block;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    order: 10;
+}
+
 .round {
     width: 351px;
     padding: 10px;
@@ -78,7 +97,7 @@ section {
     border-radius: 50%;
     position: relative;
     z-index: 10;
-} 
+}
 
 /* Class Selectors */
 .text-center {
@@ -92,6 +111,7 @@ section {
 p {
     margin: 24px;
 }
+
 @media screen and (max-width: 768px) {
   aside{
     order: 1;
