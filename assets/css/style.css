@@ -63,18 +63,36 @@ aside {
     flex: 1;
     flex-direction: column;
     background-color: #121212;
+    margin-top: 7%;
     padding: 20px;
     align-items: center;
 }
 
 aside img {
-    order: 1;
+    order: 2;
 }
   
 aside h2 {
     position: relative;
     z-index: 1;
-    order: 2;
+    order: 1;
+    transform: translate(-80px, 40px) rotate(-24deg);
+}
+
+span {
+    display: inline-block;
+}
+
+.this {
+    transform: rotate(-11deg);
+}
+
+.is {
+    transform: translate(0, -4px) rotate(0deg);
+}
+
+.me {
+    transform: rotate(8deg);
 }
 
 section {
