@@ -30,13 +30,13 @@ footer {
     width: 100%;
     line-height: 60px;
     background-color: rgb(17, 17, 43);
-    margin-bottom: 6vh;
 }
 
 header {
     display: inline-block;
     position: relative;
     border-bottom: 1px solid #212121;
+    margin-bottom: 6vh;
     z-index: 30;
 }
 
