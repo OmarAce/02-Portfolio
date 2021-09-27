@@ -111,8 +111,8 @@ section {
 }
 
 footer {
-    display: flex;
-    position: fixed;
+    display: inline-block;
+    position: relative;
     padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
@@ -176,8 +176,8 @@ p {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    padding-top: 3%;
-    min-height: 30vh;
+    padding: 3% 3%;
+    min-height: 24vh;
     background-color: #121212;
 }
 
@@ -231,7 +231,11 @@ p {
     border-bottom: 4px solid #0077b5;
 }
 .socials ul li:hover::before {
-    height: 44%;
+    height: 100%;
+}
+
+.socials ul li::before {
+    pointer-events: none;
 }
 
 /* Style inputs with type="text", select elements and textareas */
