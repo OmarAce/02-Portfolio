@@ -111,8 +111,8 @@ section {
 }
 
 footer {
-    display: flex;
-    position: fixed;
+    display: inline-block;
+    position: relative;
     padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
@@ -150,6 +150,6 @@ p {
 
   .home-content {
     order: 2;
-
+    min-width: 100vw;
   }
 }
