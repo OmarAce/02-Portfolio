@@ -115,8 +115,16 @@ footer {
     position: relative;
     padding: 10px 10px 0px 10px;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     text-align: center;
+}
+
+.home-content {
+    margin: auto 0;
+}
+
+.home-content h1 {
+    color: rgb(154, 32, 179);
 }
 
 .round {
@@ -150,6 +158,6 @@ p {
 
   .home-content {
     order: 2;
-    min-width: 100vw;
+
   }
 }
