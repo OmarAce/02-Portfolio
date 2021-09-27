@@ -113,6 +113,16 @@ p {
     background-color: #121212;
 }
 
+div h1 {
+    width: 100vw;
+    margin-top: 70px;
+}
+
+div p {
+    margin-left: 16vw;
+    margin-right: 16vw;
+}
+
 .socials ul {
     position: relative;
     display: flex;
