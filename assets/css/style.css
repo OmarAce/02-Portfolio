@@ -86,6 +86,10 @@ span {
     display: inline-block;
 }
 
+.fancy{
+    color: turquoise;
+}
+
 .this {
     transform: rotate(-11deg);
 }
@@ -97,6 +101,7 @@ span {
 .me {
     transform: rotate(8deg);
 }
+
 
 section {
     flex: 3;
@@ -134,6 +139,7 @@ footer {
 
 p {
     margin: 24px;
+    line-height: 26px;
 }
 
 
