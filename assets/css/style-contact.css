@@ -17,7 +17,7 @@ h1,
 h2 {
     margin: 20px;
 }
-  
+
 nav li {
     display: inline;
     padding: 0px 20px;
@@ -30,10 +30,12 @@ footer {
     width: 100%;
     line-height: 60px;
     background-color: rgb(17, 17, 43);
+    margin-bottom: 6vh;
 }
 
 header {
-    position: fixed;
+    display: inline-block;
+    position: relative;
     border-bottom: 1px solid #212121;
     z-index: 30;
 }
@@ -115,7 +117,7 @@ p {
 
 div h1 {
     width: 100vw;
-    margin-top: 70px;
+    color: rgb(154, 32, 179);
 }
 
 div p {
