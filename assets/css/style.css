@@ -69,6 +69,8 @@ aside {
     margin-top: 7%;
     padding: 20px;
     align-items: center;
+    max-width: 468px;
+    max-height: 468px;
 }
 
 aside img {
@@ -117,7 +119,6 @@ footer {
     bottom: 0;
     width: 100vw;
     text-align: center;
-    text-size-adjust: auto;
 }
 
 .home-content {
@@ -154,11 +155,35 @@ p {
 
 
 @media screen and (max-width: 768px) {
-  aside{
+  aside img{
     order: 1;
+    max-width: 234px;
+    max-height: 234px;
   }    
 
   .home-content {
     order: 2;
   }
+
+  
+  nav {
+    font-size: 4vw;
+  }
+
+  footer a {
+    font-size: 4vw;
+  }
+
+  .this {
+    transform: translate(1px, 15px)rotate(-24deg);
+  }
+
+  .is {
+    transform: translate(0px, 1px) rotate(-12deg);
+  }
+
+  .me {
+    transform: translate(2px, 0px) rotate(4deg);
+}
+
 }

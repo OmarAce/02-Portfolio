@@ -62,11 +62,10 @@ section {
 footer {
     display: inline-block;
     position: relative;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     bottom: 0;
     width: 100vw;
     text-align: center;
-    text-size-adjust: auto;
 }
 
 /* Class Selectors */
@@ -129,6 +128,9 @@ div p {
 .socials ul {
     position: relative;
     display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials ul li {
@@ -250,5 +252,20 @@ input[type=text], select, textarea {
 
   p {
     width: 100vw;
+  }
+
+  nav {
+      font-size: 4vw;
+  }
+
+  footer a {
+    font-size: 4vw;
+  }
+  
+  .socials ul li a .fa {
+    font-size: 20vw;
+  }
+  .socials ul li::before {
+    font-size: 20vw;
   }
 }
