@@ -30,7 +30,7 @@ nav li {
 header,
 footer {
     height: 60px;
-    width: 100%;
+    width: 100vw;
     line-height: 60px;
     background-color: rgb(17, 17, 43);
 }
@@ -117,6 +117,7 @@ footer {
     bottom: 0;
     width: 100vw;
     text-align: center;
+    text-size-adjust: auto;
 }
 
 .home-content {
@@ -159,6 +160,5 @@ p {
 
   .home-content {
     order: 2;
-
   }
 }
