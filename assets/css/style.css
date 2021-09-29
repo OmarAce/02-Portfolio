@@ -52,6 +52,16 @@ header {
     z-index: 30;
 }
 
+footer {
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -60,13 +70,21 @@ a:hover {
     text-decoration: underline;
 }
 
+section {
+    flex: 3;
+    background-color: var(--background-color);
+    padding: 20px;
+    order: 2;
+}
+
+
 main {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     margin: 0;
     height: 100vh;
-    background-color: #121212;
+    background-color: var(--background-color);
     padding: 60px 0;
     margin-bottom: 5px;
     animation: transitionIn 0.75s;
@@ -101,7 +119,7 @@ span {
 }
 
 .fancy{
-    color: turquoise;
+    color: var(--fancy-color);
 }
 
 .this {
@@ -116,36 +134,19 @@ span {
     transform: rotate(8deg);
 }
 
-
-section {
-    flex: 3;
-    background-color: #121212;
-    padding: 20px;
-    order: 2;
-}
-
-footer {
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px 10px 10px;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-}
-
 .home-content {
     margin: auto 0;
 }
 
 .home-content h1 {
     font-size: 3rem;
-    color: rgb(154, 32, 179);
+    color: var(--fancy-color2);
 }
 
 .round {
     width: 351px;
     padding: 10px;
-    border: 5px solid rgb(90, 100, 241);
+    border: 5px solid var(--circle);
     border-radius: 50%;
     position: relative;
     z-index: 10;

@@ -54,6 +54,15 @@ header {
     z-index: 30;
 }
 
+footer {
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -67,15 +76,6 @@ section {
     background-color: var(--background-color);
     padding: 20px;
     order: 2;
-}
-
-footer {
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px 10px 10px;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
 }
 
 /* Class Selectors */
@@ -95,6 +95,7 @@ p {
 /* Contact Form Specific */
 
 .info-box {
+    margin: auto 0;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -103,8 +104,21 @@ p {
     justify-content: center;
     height: 35vh;
     background-color: var(--background-color);
-    padding: 20px;
+    padding: 60px 0;
 }
+
+.info-box {
+    margin: auto 0;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 60px 0;
+}
+
 
 .info-box h1 {
     font-size: 3rem;
@@ -202,7 +216,8 @@ form {
     margin: 0 auto;
     width: 500px;
     padding: 10px;
-    background-color: rgb(17, 17, 43);
+    background-color: var(--end-color);
+    border: 1px solid var(--end-border-color);
     border-radius: 20px;
     display: flex;
     flex-shrink: 1;
