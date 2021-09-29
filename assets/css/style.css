@@ -20,6 +20,7 @@
 
 body {
     min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -42,6 +43,8 @@ footer {
     width: 100vw;
     line-height: 60px;
     background-color: rgb(17, 17, 43);
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 header {
@@ -183,12 +186,12 @@ p {
   }
 
   
-  nav {
+  nav li a{
     font-size: 4vw;
   }
 
   footer a {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .this {

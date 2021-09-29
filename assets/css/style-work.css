@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100vw;
     background-color: var(--background-color);
 }
   
@@ -47,6 +48,8 @@ footer {
     width: 100vw;
     line-height: 60px;
     background-color: rgb(17, 17, 43);
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 header {
@@ -177,17 +180,21 @@ p {
     float: right;
 }
 
+.fancy {
+    color: var(--fancy-color);
+}
+
 @media screen and (max-width: 768px) {
 
-  nav {
-    font-size: 4vw;
-  }
-
-  footer a {
-    font-size: 4vw;
-  }
-
-  .apps {
+    nav li a{
+      font-size: 4vw;
+    }
+    
+    footer a {
+      font-size: 3vw;
+    }
+  
+    .apps {
     margin: 0;
     display: grid;
     grid-template-columns: 100%;
