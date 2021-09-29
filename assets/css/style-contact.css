@@ -107,7 +107,7 @@ p {
     padding: 60px 0;
 }
 
-.info-box {
+.info-box2 {
     margin: auto 0;
     display: flex;
     flex: 1;
@@ -117,6 +117,7 @@ p {
     justify-content: center;
     background-color: var(--background-color);
     padding: 60px 0;
+    margin-bottom: -60px;
 }
 
 
