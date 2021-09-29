@@ -20,8 +20,6 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-color: var(--background-color);
 }
   
@@ -85,10 +83,7 @@ section {
 }
 
 main {
-    display: flex;
     flex: 1;
-    flex-wrap: wrap;
-    flex-direction: row;
     height: 100vh;
     background-color: var(--background-color);
     padding: 60px 0;
@@ -126,32 +121,31 @@ main {
     transform: scale(1.05, 1.05);
 }
 
-.sect1 {
-    background-image: url(https://www.lpl.com/content/dam/lpl-www/images/Article_Page/ARTICLE-calculator-image-680x500.jpg);
+div {
     background-position: center;
     background-size: cover;
-    padding: 7em
+    border: 1px solid var(--end-border-color);
+    height: 20vh;
+    max-width: auto;
+    border-radius: 14px;
+    margin: 0 auto;
+    background-color: var(--end-color);
+}
+
+.sect1 {
+    background-image: url(../calculator.jpg);
 }
 
 .sect2 {
-    background-image: url(https://www.lpl.com/content/dam/lpl-www/images/Article_Page/ARTICLE-calculator-image-680x500.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 7em
+    background-image: url(../led-wall.jpg);
 }
 
 .sect3 {
-    background-image: url(https://www.lpl.com/content/dam/lpl-www/images/Article_Page/ARTICLE-calculator-image-680x500.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 7em
+    background-image: url(../puzzle.jpg);
 }
 
 .sect4 {
-    background-image: url(https://www.lpl.com/content/dam/lpl-www/images/Article_Page/ARTICLE-calculator-image-680x500.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 7em
+    background-image: url(../workout.jpg);
 }
 
 /* Class Selectors */
