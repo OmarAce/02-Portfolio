@@ -1,3 +1,5 @@
+/* Page Color Scheme */
+
 :root {
     --text-color: white;
     --background-color: #121212;
@@ -18,6 +20,10 @@
     font-size: 20px;
 }
 
+/* Page Element Selectors */
+
+/* Body of Page, Sets Height, Flex Display, and Background Color */
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,7 +31,9 @@ body {
     max-width: 100vw;
     background-color: var(--background-color);
 }
-  
+
+/* H Text Selectors */
+
 h1,
 h2 {
     margin: 20px;
@@ -35,12 +43,16 @@ h1 {
     color: var(--fancy-color2);
     font-size: 3rem;
 }
-  
+
+/*  Navigation Bar Display */
+
 nav li {
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
 }
+
+/* Header/Footer Bar Properties */
 
 header,
 footer {
@@ -69,6 +81,7 @@ footer {
     text-align: center;
 }
 
+/* Nav anchors get underlined when hovered */
 
 a {
     text-decoration: none;
@@ -78,6 +91,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Section Container Propeties, Make Flexible Display*/
+
 section {
     display: flex;
     flex: 3;
@@ -85,13 +100,16 @@ section {
     flex-direction: column;
     background-color: var(--background-color);
     padding: 20px;
-    order: 2;
 }
+
+/* Work Introduction Container */
 
 .intro {
     order: 1;
     margin: 0 auto;
 }
+
+/* Main Page Content Display / Transition of Content */
 
 main {
     flex: 1;
@@ -100,6 +118,10 @@ main {
     margin-bottom: 5px;
     animation: transitionIn 0.75s;
 }
+
+/* Application Cards */
+
+/* Placing Containers in Grid */
 
 .apps {
     order: 2;
@@ -110,6 +132,8 @@ main {
         "sect1 sect2"
         "sect3 sect4";
 }
+
+/* Assign Cards to Grid */
 
 .apps a:nth-of-type(1) {
     grid-area: sect1;
@@ -125,10 +149,14 @@ main {
     grid-area: sect4;
 }
 
+/* Cards Transform and have Box Shadow on Hover */
+
 .apps div:hover {
     box-shadow: inset 0 0 8px var(--fancy-color), 0 0 15px var(--fancy-color);
     transform: scale(1.05, 1.05);
 }
+
+/* Card/Container Sizing, Positioning and Border */
 
 div {
     background-position: center;
@@ -141,6 +169,8 @@ div {
     background-color: var(--end-color);
 }
 
+/* Card Text */
+
 h3 {
     font-size: 0.8em;
     background-color: var(--end-border-color);
@@ -150,6 +180,8 @@ h3 {
     border-radius: 0 14px 14px 0;
     text-align: center;
 }
+
+/* Background Images for Each App/Card */
 
 .sect1 {
     background-image: url(../calculator.jpg);
@@ -167,18 +199,14 @@ h3 {
     background-image: url(../workout.jpg);
 }
 
-/* Class Selectors */
+/* Text Classes */
+
 .text-center {
     text-align: center;
 }
   
 .text-right {
     text-align: right;
-}
-
-p {
-    margin: 24px;
-    line-height: 26px;
 }
 
 .float-left {
@@ -189,43 +217,69 @@ p {
     float: right;
 }
 
+/* Text Height/Margin */
+
+p {
+    margin: 24px;
+    line-height: 26px;
+}
+
+/* Fancy Text Effect */
+
 .fancy {
     color: var(--fancy-color);
 }
 
+/* -- Media Query Changes -- */
+
 @media screen and (max-width: 768px) {
 
+    /* Header/Footer Text Changes */
+    
     nav li a{
-      font-size: 4vw;
+        font-size: 4vw;
     }
     
     footer a {
-      font-size: 3vw;
+        font-size: 3vw;
     }
-  
+    
+    /* App Cards Grid Display Change */
+
     .apps {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(auto, 4);
-    grid-template-areas: 
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 4);
+        grid-template-areas: 
         "sect1" 
         "sect2"
         "sect3" 
         "sect4";
-    justify-items:  center;
-  }
+        justify-items:  center;
+    }
 
-  .float-left .float-right{ 
-    clear: both;
-  }
-  .sect1 .sect2 .sect3 .sect4 {
-      margin: 0 auto;
-  }
-  div {
-      width: 90vw;
-  }
+    /* Clearing of Float Effects */
+
+    .float-left .float-right{ 
+        clear: both;
+    }
+
+    /* Centering of Cards */
+
+    .sect1 .sect2 .sect3 .sect4 {
+        margin: 0 auto;
+    }
+    
+    /* Card Sizing Changes */
+    
+    div {
+        width: 90vw;
+    }
+
 }
+
+/* Transition Effect */
 
 @keyframes transitionIn {
     from {
