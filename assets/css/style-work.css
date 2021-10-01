@@ -97,7 +97,6 @@ main {
     flex: 1;
     height: 100vh;
     background-color: var(--background-color);
-    padding: 60px 0;
     margin-bottom: 5px;
     animation: transitionIn 0.75s;
 }
@@ -140,6 +139,16 @@ div {
     max-width: 720px;
     border-radius: 14px;
     background-color: var(--end-color);
+}
+
+h3 {
+    font-size: 0.8em;
+    background-color: var(--end-border-color);
+    margin-right: 60%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid var(--end-border-color);
+    border-radius: 0 14px 14px 0;
+    text-align: center;
 }
 
 .sect1 {

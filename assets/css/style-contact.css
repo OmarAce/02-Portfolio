@@ -98,7 +98,7 @@ p {
 /* Contact Form Specific */
 
 .info-box {
-    margin: auto 0;
+    margin-top: -4.5%;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -262,14 +262,7 @@ input[type=text], select, textarea {
   }
 
 @media screen and (max-width: 768px) {
-  aside{
-    order: 1;
-  }    
 
-  .home-content {
-    order: 2;
-  }  
-  
   section {
     flex-wrap: none;
   }
@@ -280,6 +273,10 @@ input[type=text], select, textarea {
 
   p {
     width: 100vw;
+  }
+
+  .info-box {
+    margin-top: 4%;
   }
 
   nav li a{
