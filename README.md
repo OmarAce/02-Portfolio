@@ -12,7 +12,7 @@ Assignment included adding accessibility elements, further cleaning/structuring 
 
 ## Image
 
-![image of website built from the code that was refactored](assets/portfolio-screenshot.png)
+![image of portfolio built](assets/portfolio-screenshot.png)
 
 ## Destination
 
