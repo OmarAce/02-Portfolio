@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/kid3uhn.css">
@@ -15,15 +16,25 @@
   
   <!-- Nav Bar -->
 
-  <header>
-    <nav class="text-right">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">My Work</a></li>
-        <li><a href="contact.html">Contact Info</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" id="navbar" href="./index.html"><span class="Omar">Omar</span> <span class="Acevedo">Acevedo</span></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto mt-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link ml-3" href="work.html">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3" href="contact.html">Contact Info</a>
+        </li>
+        </ul>
+      </div>
+  </nav>
 
   <!-- Main Page Content -->
 
@@ -31,7 +42,7 @@
     
     <!-- Aside Img/Span Fancy Text -->
 
-    <aside>
+    <aside class="col-sm-12 col-md-auto">
       <h2 class="text-center"> 
         <span class="this">This</span>
         <span class="is">is</span>
@@ -43,7 +54,7 @@
     <!-- About Me Section -->
 
     <section class="home-content">
-      <h1 class="text-center"> Welcome to My Home Page! </h1>
+      <h1 class="text-center responsive_headline"> Welcome to My Home Page! </h1>
       <p>Hi, I'm <span class="fancy">Omar Acevedo!</span> I am a full stack developer from Anaheim, California. Able to work remotely with no issue. 👍 </p>
       <p> After 5 years working as a Emergency Medical Technician; 🚑 It was time for my entrance into the tech industry! </p>
       <p>I'm eager to work with a stack that includes frontend and backend, multiple languages and frameworks. Ready to work quickly, effectively, and to burn the midnight oil. 🕯️ Willing to learn any new languages too!</p>
@@ -56,10 +67,13 @@
 
   <!-- Footer -->
 
-  <footer>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="" aria-label="Boring"> CC BY-NC-SA 4.0 2021 © Omar Acevedo. </a>
+  <footer class='card-footer custom-footer'>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="text-white" aria-label="Boring"> CC BY-NC-SA 4.0 2021 © Omar Acevedo. </a>
   </footer>
-
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>pt>
 
 </body>
 

@@ -45,6 +45,10 @@ h2 {
 
 /* Navigation Bar Display */
 
+nav {
+    z-index: 99;
+}
+
 nav li {
     display: inline;
     padding: 0px 20px;
@@ -57,18 +61,9 @@ header,
 footer {
     height: 60px;
     width: 100vw;
-    line-height: 60px;
-    background-color: var(--end-color);
+    background-color: rgb(17, 17, 43);
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-header {
-    display: inline-block;
-    position: relative;
-    border-bottom: 1px solid var(--end-border-color);
-    margin-bottom: 6vh;
-    z-index: 30;
 }
 
 footer {
@@ -312,6 +307,31 @@ input[type=submit]:hover {
     display: flex;
 }
 
+.navbar-custom {
+    background-color: var(--end-color);
+    letter-spacing: 4px;
+}
+
+.navbar-custom a {
+    color: #d8dee9;
+}
+
+.navbar-custom a:hover {
+    color: var(--fancy-color);
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255,102,203);
+} 
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+.custom-footer {
+    background-color: var(--end-color);
+}
+
 /* -- Media Query Changes -- */
 
 @media screen and (max-width: 768px) {
@@ -338,15 +358,6 @@ input[type=submit]:hover {
         margin-top: 4%;
     }
 
-    /* Header/Footer Text Changes */
-
-    nav li a{
-        font-size: 4vw;
-    }
-
-    footer a {
-        font-size: 3vw;
-    }
   
     /* Socials Effect Size Change */
 
