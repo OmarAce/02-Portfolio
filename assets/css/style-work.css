@@ -155,19 +155,19 @@ h3 {
 /* Background Images for Each App/Card */
 
 .sect1 {
-    background-image: url(../calculator.jpg);
+    background-image: url(../quiz-image.png);
 }
 
 .sect2 {
-    background-image: url(../led-wall.jpg);
+    background-image: url(../planner-img.png);
 }
 
 .sect3 {
-    background-image: url(../puzzle.jpg);
+    background-image: url(../weather-dash.png);
 }
 
 .sect4 {
-    background-image: url(../workout.jpg);
+    background-image: url(https://user-images.githubusercontent.com/86388266/140447122-1b521d7a-fb59-4bc1-84b6-5597a0a9758c.png );
 }
 
 /* Text Classes */
@@ -271,7 +271,7 @@ p {
     
     /* Card Sizing Changes */
     
-    div {
+    .appcard {
         width: 90vw;
     }
 
