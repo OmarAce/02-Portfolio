@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style-work.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/transition.css">
@@ -16,19 +17,29 @@
   
   <!-- Nav Bar -->
 
-  <header>
-    <nav class="text-right">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">My Work</a></li>
-        <li><a href="contact.html">Contact Info</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" id="navbar" href="index.html"><span class="Omar">Omar</span> <span class="Acevedo">Acevedo</span></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto mt-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link ml-3" href="work.html">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3" href="contact.html">Contact Info</a>
+        </li>
+        </ul>
+      </div>
+  </nav>
 
   <!-- Main Page Content -->
 
-  <main>
+  <main class="mt-4 pt-4">
     
     <!-- Introduction of built applications -->
 
@@ -47,25 +58,25 @@
     <section class="apps">
       
       <a href="#">
-        <div class="sect1 float-right">
+        <div class="appcard sect1 float-right">
           <h3>Calculator</h3>
         </div>
       </a>
 
       <a href="#">
-        <div class="sect2 float-left">
+        <div class="appcard sect2 float-left">
           <h3>LED Wall</h3>
         </div>
       </a>
 
       <a href="#">
-        <div class="sect3 float-right">
+        <div class="appcard sect3 float-right">
           <h3>Puzzle Game</h3>
         </div>
       </a>
 
       <a href="#">
-        <div class="sect4 float-left">
+        <div class="appcard sect4 float-left">
           <h3>Workout Tracker</h3>
         </div>
       </a>
@@ -76,9 +87,14 @@
 
   <!-- Footer -->
 
-  <footer>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="" aria-label="Boring"> CC BY-NC-SA 4.0 2021 © Omar Acevedo. </a>
+  <footer class='card-footer custom-footer text-center'>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="text-white" aria-label="Boring"> CC BY-NC-SA 4.0 2021 © Omar Acevedo. </a>
   </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>pt>
+
 
 </body>
 

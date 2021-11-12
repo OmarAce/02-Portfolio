@@ -51,34 +51,6 @@ nav li {
     text-decoration: none;
 }
 
-/* Header/Footer Bar Properties */
-
-header,
-footer {
-    height: 60px;
-    width: 100vw;
-    background-color: rgb(17, 17, 43);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-header {
-    display: inline-block;
-    position: relative;
-    border-bottom: 1px solid var(--end-border-color);
-    margin-bottom: 6vh;
-    z-index: 30;
-}
-
-footer {
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px 10px 10px;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-}
-
 /* Nav anchors get underlined when hovered */
 
 a {
