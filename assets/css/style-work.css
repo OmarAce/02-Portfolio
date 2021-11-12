@@ -218,7 +218,7 @@ p {
 }
 
 .resume {
-    color: #d8dee9;
+    color: var(--fancy-color2);
     text-decoration: none;
 }
 
