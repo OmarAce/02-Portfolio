@@ -52,16 +52,6 @@ nav li {
     text-decoration: none;
 }
 
-/* Nav anchors get underlined when hovered */
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Section Container Propeties, Make Flexible Display*/
 
 section {
@@ -225,6 +215,16 @@ p {
 
 .custom-footer {
     background-color: var(--end-color);
+}
+
+.resume {
+    color: #d8dee9;
+    text-decoration: none;
+}
+
+.resume a:hover {
+    color: var(--fancy-color);
+    text-decoration: none;
 }
 
 
