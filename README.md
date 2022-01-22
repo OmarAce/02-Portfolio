@@ -16,4 +16,4 @@ Assignment included adding accessibility elements, further cleaning/structuring 
 
 ## Destination
 
-Url Published at: https://omarace.github.io/02-Portfolio/
+Url Published at: https://omarace.github.io/Portfolio/
